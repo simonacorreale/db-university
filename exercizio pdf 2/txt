@@ -1,0 +1,20 @@
+Query per la ricerca 
+
+PDF 1
+________
+1 Query
+
+SELECT YEAR(enrolment_date) AS anno_studio, COUNT(*) AS numero_iscritti
+FROM students
+GROUP BY anno_studio
+ORDER BY anno_studio;
+
+________
+2 Query
+
+SELECT YEAR(office_address) AS palazzo_vicino, COUNT(*) AS colleghi
+FROM teachers
+GROUP BY palazzo_vicino;
+
+________
+3 Query
