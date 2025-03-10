@@ -1,0 +1,41 @@
+Query per la ricerca 
+
+PDF 1
+________
+1 Query
+
+SELECT COUNT(*) AS total_students
+FROM students
+WHERE date_of_birth LIKE '1990%';
+________
+2 Query SELECT COUNT(*) AS total_courses
+FROM courses
+WHERE cfu > '10';
+________
+3 Query 
+SELECT * 
+FROM students
+WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30
+ORDER BY date_of_birth ASC;
+________
+4 Query 
+SELECT COUNT(*) AS total_courses
+FROM courses
+WHERE period LIKE 'I semestre%'
+AND year = 1;
+________
+5 Query 
+SELECT *
+FROM exams
+WHERE date LIKE '2020-06-20%'
+AND hour > '14:00:00';
+________
+6 Query 
+
+SELECT COUNT(*) AS total_courses
+FROM degrees
+WHERE level LIKE 'magistrale';
+
+____
+7 Query SELECT COUNT(*) AS total_departments
+FROM departments
