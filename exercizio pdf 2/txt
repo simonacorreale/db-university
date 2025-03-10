@@ -25,3 +25,6 @@ GROUP BY exam_id;
 ________
 4 Query
 
+SELECT department_id, COUNT(*) AS total_cours
+FROM degrees
+GROUP BY department_id;
