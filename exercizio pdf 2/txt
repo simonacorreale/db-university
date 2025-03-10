@@ -18,3 +18,10 @@ GROUP BY palazzo_vicino;
 
 ________
 3 Query
+
+SELECT exam_id, AVG(vote) AS total_vote
+FROM exam_student
+GROUP BY exam_id;
+________
+4 Query
+
